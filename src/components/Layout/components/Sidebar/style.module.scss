@@ -1,0 +1,24 @@
+.Sidebar {
+  height: 100vh;
+  max-width: 220px;
+  width: 100%;
+  padding: 10px 15px;
+  border-right: 1px solid #e9edf4;
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      max-width: 100px;
+    }
+    i {
+      font-size: 12px;
+      cursor: pointer;
+      color: #202c4b;
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: #3d5ee1;
+      }
+    }
+  }
+}
