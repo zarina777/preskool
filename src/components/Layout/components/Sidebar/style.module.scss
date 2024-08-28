@@ -1,20 +1,26 @@
 .Sidebar {
   height: 100vh;
-  max-width: 220px;
+  max-width: 252px;
   width: 100%;
-  padding: 10px 15px;
+  padding: 0 10px;
   border-right: 1px solid #e9edf4;
-  .wrap {
+  overflow-y: scroll;
+  .logo_wrap {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 5px 18px;
+    position: sticky;
+    top: 0;
+    left: 0;
     img {
       max-width: 100px;
     }
     i {
-      font-size: 12px;
+      font-size: 15px;
       cursor: pointer;
-      color: #202c4b;
+      color: #202c4be7;
       transition: all 0.2s ease-in;
       &:hover {
         color: #3d5ee1;
