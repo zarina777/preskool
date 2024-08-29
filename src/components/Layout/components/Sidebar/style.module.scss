@@ -5,6 +5,19 @@
   padding: 0 10px;
   border-right: 1px solid #e9edf4;
   overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.15em;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(239, 239, 239, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #9ca1af31;
+    outline: 1px solid #9ca1af31;
+    border-radius: 10px;
+  }
   .logo_wrap {
     background-color: #fff;
     display: flex;
@@ -14,6 +27,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 200;
     img {
       max-width: 100px;
     }
