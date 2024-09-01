@@ -11,6 +11,7 @@ const MultiNav: React.FC<MultiNavProps> = ({ icon, name }) => {
   return (
     <div className={cn.wrapper}>
       <div
+        style={!open ? { backgroundColor: "#F2F5FF" } : {}}
         onClick={() => {
           setOpen((prev: boolean) => (prev ? false : true));
         }}
@@ -30,7 +31,7 @@ const MultiNav: React.FC<MultiNavProps> = ({ icon, name }) => {
         </span>
       </div>
       <ul
-        style={{ display: open ? "block" : "none" }}
+        style={{ maxHeight: open ? "0" : "fit-content" }}
         ref={dropdown}
         className={cn.dropdown}
       >

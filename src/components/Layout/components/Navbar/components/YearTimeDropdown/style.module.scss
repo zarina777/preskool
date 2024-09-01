@@ -1,0 +1,31 @@
+.YearDropdown {
+  position: relative;
+  display: inline-block;
+  .year_chosen {
+  }
+  .dropdown {
+    border-color: #e9edf4;
+    box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+    font-size: 0.875rem;
+    color: #202c4b;
+    background-color: #fff;
+    transform: translate3d(0px, 20.8px, 0px);
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    li {
+      color: #202c4b !important;
+      padding: 0.594rem 0.9375rem;
+      font-size: 14px;
+      display: block;
+
+      cursor: pointer;
+      &:hover {
+        background-color: #e9edf4 !important;
+        border: 1px solid #e9edf4 !important;
+        color: #515b73 !important;
+      }
+    }
+  }
+}

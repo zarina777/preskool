@@ -1,0 +1,23 @@
+.logo_wrap {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px 18px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    img {
+      max-width: 100px;
+    }
+    i {
+      font-size: 15px;
+      cursor: pointer;
+      color: #202c4be7;
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: #3d5ee1;
+      }
+    }
+  }

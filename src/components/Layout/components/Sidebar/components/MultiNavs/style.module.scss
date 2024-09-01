@@ -5,6 +5,7 @@
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
+
     .wrap {
       display: flex;
       align-items: center;
@@ -46,16 +47,21 @@
     }
   }
   .dropdown {
-    display: none;
-    transition: all 9s ease;
+    // transition-property: max-height;
+    // transition-duration: 2s;
+    // transition-timing-function: linear;
+    // transition-delay: 1s;
+    overflow: hidden;
+    max-height: 0;
     li {
       padding: 8px 10px 8px 45px;
       position: relative;
-      z-index: inherit;
       transition: all 0.5s;
       cursor: pointer;
       font-size: 14px;
       color: #6a7287;
+      z-index: inherit;
+      transition: all 0.5s ease;
       &::before {
         content: "";
         width: 5px;
