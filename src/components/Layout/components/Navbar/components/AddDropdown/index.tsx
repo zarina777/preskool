@@ -7,7 +7,7 @@ interface AddDropdownProps {
 const AddDropdown: React.FC<AddDropdownProps> = ({ className, style }) => {
   return (
     <div style={style} className={clsx(cn.AddDropdown, className)}>
-      AddDropdown
+      <i className="fa-solid fa-circle-plus"></i>
     </div>
   );
 };

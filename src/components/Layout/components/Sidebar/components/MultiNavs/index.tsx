@@ -7,7 +7,7 @@ interface MultiNavProps {
 }
 const MultiNav: React.FC<MultiNavProps> = ({ icon, name }) => {
   const dropdown = useRef<HTMLUListElement | null>(null);
-  const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(true);
   return (
     <div className={cn.wrapper}>
       <div

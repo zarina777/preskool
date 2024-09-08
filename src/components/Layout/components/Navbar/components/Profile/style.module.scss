@@ -1,0 +1,20 @@
+.Profile {
+  position: relative;
+  .profile_img_btn {
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 40px;
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .dropdown {
+    top: calc(100% + 11px);
+    right: 0;
+    position: absolute;
+  }
+}

@@ -9,6 +9,7 @@ import {
 import Layout from "./components/Layout";
 import Students from "./routes/StudentInfo";
 import "./base.scss";
+import { NavProvider } from "./context/nav";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -18,6 +19,8 @@ const router = createBrowserRouter(
 );
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <NavProvider>
+      <RouterProvider router={router} />
+    </NavProvider>
   </StrictMode>
 );

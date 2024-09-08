@@ -2,7 +2,6 @@ import cn from "./style.module.scss";
 import { clsx } from "clsx";
 import Groups from "./components/Groups";
 import MultiNav from "./components/MultiNavs";
-import Logo from "./components/Logo";
 
 interface SidebarProps {
   className?: string;
@@ -10,7 +9,6 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   return (
     <div className={clsx(cn.Sidebar, className)}>
-      <Logo />
       <div className={cn.navigation}>
         <Groups heading="People">
           <MultiNav name="Students" icon="fa-solid fa-graduation-cap" />

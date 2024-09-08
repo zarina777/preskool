@@ -14,9 +14,9 @@ const Layout = () => {
   }, []);
   return (
     <div className={cn.Layout}>
+      <Navbar />
       <Sidebar />
       <div className={cn.content_layout}>
-        <Navbar />
         <Outlet />
       </div>
     </div>

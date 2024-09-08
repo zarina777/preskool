@@ -1,3 +1,6 @@
 .Layout {
   display: flex;
+  .content_layout {
+    width: calc(100% - 252px);
+  }
 }

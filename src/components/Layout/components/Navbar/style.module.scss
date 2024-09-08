@@ -1,0 +1,58 @@
+$lightBlue: #e9edf4;
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  display: flex;
+  background-color: #fff;
+  z-index: 100;
+  .wrap {
+    height: 100%;
+    padding: 10px 25px;
+    border-bottom: 1px solid $lightBlue;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .search {
+      max-width: 280px;
+      width: 100%;
+      border: 1px solid $lightBlue;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+      input {
+        border: none;
+        background-color: transparent;
+        flex: 1;
+        &::placeholder {
+          color: #b5b9be;
+        }
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+    .remaining {
+      display: flex;
+      gap: 25px;
+      .mode {
+        border: 1px solid $lightBlue;
+        border-radius: 5px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $lightBlue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.logo_wrap {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 252px;
+  padding: 10px;
+  border-right: 1px solid #e9edf4;
+
+  img {
+    max-width: 100px;
+  }
+  i {
+    font-size: 15px;
+    cursor: pointer;
+    color: #202c4be7;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: #3d5ee1;
+    }
+  }
+}
