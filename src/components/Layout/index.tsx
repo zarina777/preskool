@@ -7,6 +7,7 @@ import cn from "./style.module.scss";
 const Layout = () => {
   const location = useLocation();
   const navigate = useNavigate();
+
   useEffect(() => {
     if (location.pathname == "/") {
       navigate("/students");
