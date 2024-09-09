@@ -25,7 +25,7 @@ const MultiNav: React.FC<MultiNavProps> = ({ icon, name }) => {
           <i
             className={clsx(
               "fa-solid",
-              open ? "fa-chevron-down" : "fa-chevron-right"
+              !open ? "fa-chevron-down" : "fa-chevron-right"
             )}
           ></i>
         </span>
