@@ -15,11 +15,14 @@ const useStore = create<UseStoreDataType>((set) => ({
   yearDropdown: false,
   profile: false,
   addDropdown: false,
-  openYearDropdown: () => set(() => ({ yearDropdown: true, profile: false })),
+  openYearDropdown: () =>
+    set(() => ({ yearDropdown: true, profile: false, addDropdown: false })),
   closeYearDropdown: () => set(() => ({ yearDropdown: false })),
-  openProfile: () => set(() => ({ profile: true, yearDropdown: false })),
+  openProfile: () =>
+    set(() => ({ profile: true, yearDropdown: false, addDropdown: false })),
   closeProfile: () => set(() => ({ profile: false })),
-  openAddDropdown: () => set(() => ({ addDropdown:true, profile: false, yearDropdown: false })),
+  openAddDropdown: () =>
+    set(() => ({ addDropdown: true, profile: false, yearDropdown: false })),
   closeAddDropdown: () => set(() => ({ addDropdown: false })),
 }));
 
