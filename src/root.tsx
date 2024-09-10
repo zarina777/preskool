@@ -15,8 +15,8 @@ import AdminPage from "./routes/admin";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="students" element={<Students />} />
-      <Route path="admin" element={<AdminPage />} />
+      <Route path="/students" element={<Students />} />
+      <Route path="/admin" element={<AdminPage />} />
     </Route>
   )
 );
