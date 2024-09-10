@@ -1,6 +1,13 @@
 .Layout {
   display: flex;
   .content_layout {
+    left: 252px;
+    top: 0;
+    position: fixed;
     width: calc(100% - 252px);
+    height: calc(100vh - 4rem);
+    min-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
