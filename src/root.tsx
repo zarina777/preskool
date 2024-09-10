@@ -12,14 +12,26 @@ import Layout from "./components/Layout";
 import Students from "./routes/StudentInfo";
 import "./base.scss";
 import AdminPage from "./routes/admin";
+import Auth from "./routes/Auth";
+import Teacher from "./routes/teacher";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route path="/students" element={<Students />} />
-      <Route path="/admin" element={<AdminPage />} />
-    </Route>
+    <>
+      <Route path="/" element={<Auth />} />
+      <Route path="/students" element={<Layout />}>
+        <Route path="" element={<Students />} />
+      </Route>
+      <Route path="/admin" element={<Layout />}>
+        <Route path="" element={<AdminPage />} />
+      </Route>
+      <Route path="/teacher" element={<Layout />}>
+        <Route path="" element={<Teacher />} />
+      </Route>
+    </>
   )
 );
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
