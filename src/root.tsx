@@ -13,7 +13,7 @@ import Students from "./routes/StudentInfo";
 import "./base.scss";
 import AdminPage from "./routes/admin";
 import Auth from "./routes/Auth";
-import Teacher from "./routes/teacher";
+import Teacher from "./routes/Teacher";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -1,7 +1,10 @@
+import Main from "../../components/Teacher/Main"
 
 const Teacher = () => {
   return (
-    <div>Teacher</div>
+    <>
+      <Main />
+    </>
   )
 }
 
