@@ -1,9 +1,9 @@
-import Main from "../../components/Teacher/Main"
+// import Main from "../../components/Teacher/Main"
 
 const Teacher = () => {
   return (
     <>
-      <Main />
+      Teacher
     </>
   )
 }
