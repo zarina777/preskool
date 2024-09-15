@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import "./index.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -13,7 +13,7 @@ import Students from "./routes/StudentInfo";
 import "./base.scss";
 import AdminPage from "./routes/admin";
 import Auth from "./routes/Auth";
-import Teacher from "./routes/Teacher";
+import Teacher from "./routes/teacher";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
